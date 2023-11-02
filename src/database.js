@@ -8,7 +8,6 @@ const mongoose = require('mongoose');
 
 async function databaseConnect(){
     try{
-
         console.log("Connecting to:\n" + process.env.DB_URI);
         // DB connection in the local data base with the url -> 'mongodb://localhost:27017/CatDB'
         await mongoose.connect('mongodb://localhost:27017/CatDB');
